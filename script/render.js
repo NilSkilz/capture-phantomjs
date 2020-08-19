@@ -14,14 +14,7 @@ var cookies = JSON.parse(args[7])
 
 var page = webpage.create()
 page.viewportSize = {
-  width: width,
-  height: height
-}
-page.clipRect = {
-  top: 0,
-  left: 0,
-  width: clip ? width : 0,
-  height: clip ? height : 0
+  width: width
 }
 
 cookies.forEach(function (cookie) {
