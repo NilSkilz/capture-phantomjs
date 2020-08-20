@@ -14,8 +14,15 @@ var cookies = JSON.parse(args[7])
 
 var page = webpage.create()
 page.viewportSize = {
-  width: width
+  width: 384,
+  height: 100
 }
+// page.clipRect = {
+//   top: 0,
+//   left: 0,
+//   width: clip ? width : 0,
+//   height: clip ? height : 0
+// }
 
 cookies.forEach(function (cookie) {
   phantom.addCookie(cookie)
